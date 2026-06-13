@@ -1,0 +1,10 @@
+<svg width="160" height="64" viewBox="0 0 160 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="64" rx="20" fill="white"/>
+  <circle cx="30" cy="32" r="18" fill="#F32735"/>
+  <path d="M23 24V40" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M19.5 24V31C19.5 33.2 21.3 35 23.5 35H24" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M26.5 24V31C26.5 33.2 24.7 35 22.5 35H22" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M35 24C32.8 24 31 25.8 31 28V30.5C31 32.7 32.8 34.5 35 34.5C37.2 34.5 39 32.7 39 30.5V28C39 25.8 37.2 24 35 24Z" fill="white"/>
+  <path d="M35 34V40" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="56" y="39" fill="#171717" font-size="22" font-family="Arial, Helvetica, sans-serif" font-weight="700">gofood</text>
+</svg>
