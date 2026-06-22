@@ -73,11 +73,11 @@ main {
   justify-content: space-between;
   gap: 20px;
   padding: 14px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.26);
+  border: 1px solid rgba(56, 35, 23, 0.12);
   border-radius: 999px;
-  background: rgba(30, 18, 12, 0.72);
+  background: rgba(255, 250, 243, 0.88);
   backdrop-filter: blur(18px);
-  box-shadow: 0 16px 42px rgba(28, 14, 6, 0.18);
+  box-shadow: 0 16px 42px rgba(28, 14, 6, 0.08);
 }
 
 .brand {
@@ -109,14 +109,28 @@ main {
 .footer-brand-lockup strong {
   font-family: var(--font-playfair), serif;
   font-size: 1.2rem;
+}
+
+.brand-copy strong {
+  color: var(--text);
+}
+
+.footer-brand-lockup strong {
   color: var(--text-inverse);
 }
 
 .brand-copy span,
 .footer-brand-lockup span {
-  color: rgba(255, 249, 242, 0.68);
   font-size: 0.8rem;
   letter-spacing: 0.04em;
+}
+
+.brand-copy span {
+  color: var(--text-soft);
+}
+
+.footer-brand-lockup span {
+  color: rgba(255, 249, 242, 0.68);
 }
 
 .nav-links {
@@ -124,10 +138,14 @@ main {
   align-items: center;
   gap: 22px;
   font-size: 0.92rem;
-  color: rgba(255, 249, 242, 0.82);
+  color: var(--text-soft);
+  font-weight: 600;
 }
 
-.nav-links a:hover,
+.nav-links a:hover {
+  color: var(--text);
+}
+
 .footer-links a:hover {
   color: var(--gold-soft);
 }
@@ -297,8 +315,8 @@ main {
 
 .hero {
   position: relative;
-  margin-top: -92px;
-  padding: 154px 0 88px;
+  margin-top: -120px;
+  padding: 180px 0 88px;
   color: var(--text-inverse);
   background:
     radial-gradient(circle at top left, rgba(240, 201, 111, 0.24), transparent 34%),

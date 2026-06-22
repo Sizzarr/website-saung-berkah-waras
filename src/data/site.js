@@ -124,7 +124,7 @@ export const siteData = {
         'Chat langsung untuk tanya menu, pesan, atau minta arahan lokasi.',
       href: `https://wa.me/6283142927758?text=${whatsappMessage}`,
       tone: 'whatsapp',
-      logo: '/images/brands/whatsapp.png',
+      logo: '/images/brands/whatsapp.svg',
     },
     {
       name: 'GoFood',
@@ -132,7 +132,7 @@ export const siteData = {
       description: 'Pesan dari aplikasi GoFood untuk pengiriman yang praktis.',
       href: 'https://gofood.link/a/TK3VDnS',
       tone: 'gofood',
-      logo: '/images/brands/gofood.png',
+      logo: '/images/brands/gofood.svg',
     },
     {
       name: 'GrabFood',
