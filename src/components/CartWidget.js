@@ -61,17 +61,19 @@ export default function CartWidget() {
 
   return (
     <>
-      {/* Floating Cart Button */}
-      <button 
-        className="cart-float" 
-        onClick={() => setIsCartOpen(true)}
-        aria-label="Buka Keranjang Pesanan"
-      >
-        <span className="cart-float-icon">🛒</span>
-        {cartTotalItems > 0 && (
-          <span className="cart-float-badge">{cartTotalItems}</span>
-        )}
-      </button>
+      {/* Floating Cart Button (Desktop Only) */}
+      <div className="desktop-only">
+        <button 
+          className="cart-float" 
+          onClick={() => setIsCartOpen(true)}
+          aria-label="Buka Keranjang Pesanan"
+        >
+          <span className="cart-float-icon">🛒</span>
+          {cartTotalItems > 0 && (
+            <span className="cart-float-badge">{cartTotalItems}</span>
+          )}
+        </button>
+      </div>
 
       {/* Cart Modal */}
       {isCartOpen && (
@@ -135,11 +137,14 @@ export default function CartWidget() {
                 className="cart-select"
               >
                 <option value="">+ Tambah Menu Lain...</option>
-                {menuData.map((m) => (
-                  <option key={m.name} value={m.name}>
-                    {m.name} - Rp {(m.priceNormal || m.priceGoFood || 0).toLocaleString('id-ID')}
-                  </option>
-                ))}
+                {menuData.map((m) => {
+                  const displayName = m.name.length > 20 ? m.name.substring(0, 20) + '...' : m.name;
+                  return (
+                    <option key={m.name} value={m.name}>
+                      {displayName} - Rp {(m.priceNormal || m.priceGoFood || 0).toLocaleString('id-ID')}
+                    </option>
+                  );
+                })}
               </select>
               <button 
                 onClick={handleAddNewItem}

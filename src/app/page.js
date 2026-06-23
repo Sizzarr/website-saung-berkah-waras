@@ -10,18 +10,26 @@ import Footer from '@/components/Footer';
 import { siteData } from '@/data/site';
 import { menuCategories, menuData } from '@/data/menu';
 
+import MobileApp from '@/components/mobile/MobileApp';
+
 export default function Home() {
   return (
     <main>
-      <Navbar site={siteData} />
-      <Hero site={siteData} />
-      <About site={siteData} />
-      <FeaturedMenu items={siteData.featuredItems} />
-      <Menu items={menuData} categories={menuCategories} />
-      <Order channels={siteData.orderChannels} />
-      <Gallery items={siteData.galleryItems} />
-      <Location site={siteData} />
-      <Footer site={siteData} />
+      <div className="desktop-only">
+        <Navbar site={siteData} />
+        <Hero site={siteData} />
+        <About site={siteData} />
+        <FeaturedMenu items={siteData.featuredItems} />
+        <Menu items={menuData} categories={menuCategories} />
+        <Order channels={siteData.orderChannels} />
+        <Gallery items={siteData.galleryItems} />
+        <Location site={siteData} />
+        <Footer site={siteData} />
+      </div>
+
+      <div className="mobile-only">
+        <MobileApp />
+      </div>
     </main>
   );
 }

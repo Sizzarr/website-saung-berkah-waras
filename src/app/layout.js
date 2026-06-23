@@ -1,5 +1,6 @@
 import { Playfair_Display, Mulish } from 'next/font/google';
 import './globals.css';
+import './mobile.css';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
